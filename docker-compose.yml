@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+
+  a:
+    image: experiment/a
+    build:
+      context: .
+      dockerfile: Dockerfile.a
+
+  b:
+    build:
+      context: .
+      dockerfile: Dockerfile.b
+
